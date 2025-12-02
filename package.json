@@ -1,0 +1,16 @@
+{
+  "name": "assignment6-node",
+  "version": "1.0.0",
+  "homepage": "https://arpita2265.github.io/Assignment6-node",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "dependencies": {
+    "node": "^20.19.6",
+  
+    "express": "^4.19.2" 
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0" 
+  }
+}
