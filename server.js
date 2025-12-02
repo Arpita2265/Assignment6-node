@@ -23,19 +23,19 @@ const server = http.createServer((req, res) => {
     }
 
 
-    if (req.url.toLocaleLowerCase() === '/Assignment6-node' || req.url.toLocaleLowerCase() === '/home' ) {
+    if ( req.url.toLocaleLowerCase() === '/' || req.url.toLocaleLowerCase() === '/home'||req.url === '/Assignment6-node'   ) {
         filePath = path.join(__dirname, 'Home.html');
 
 
-    }else if(req.url.toLocaleLowerCase() === '/Assignment6-node/services'){
+    }else if(req.url.toLocaleLowerCase() === '/services'|| req.url === '/Assignment6-node/services' ){
 
- filePath = path.join(__dirname, '/Assignment6-node/services.html');
+ filePath = path.join(__dirname, 'services.html');
 
-    }else if(req.url.toLocaleLowerCase() === '/Assignment6-node/about'){
+    }else if(req.url.toLocaleLowerCase() === '/about' ||req.url === '/Assignment6-node/about'){
 
 filePath = path.join(__dirname, 'about.html');
 
-    }else if (req.url.toLocaleLowerCase() === '/Assignment6-node/contact'){
+    }else if (req.url.toLocaleLowerCase() === '/contact' || req.url === '/Assignment6-node/contact'){
 
          filePath = path.join(__dirname, 'contact.html');
 
